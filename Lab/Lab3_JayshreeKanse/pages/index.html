@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Web Page!</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>My Personalised Web Page!</h1>
+            </div>
+        </div>
+        <main>
+			<h2>Financial Calculator</h2>
+			<p>This is a simple financial calculator, that can be used to calculate per month retirement savings, the amount you have invested and loan pay off.
+			This can be very helful for planning the savings for retirement.</p>
+			<div>
+			<table class = "table table-hover table-bordered">
+			<caption>Retirement Amount - Savings Per Month</caption>
+				<tr>
+					<th>Parameter Name</th>
+					<th>Description</th>
+					<th>Example Value</th>
+				</tr>
+				<tr>
+					<td>yearsUntilRetirement</td>
+					<td>This parameter shows years untill retirement.</td>
+					<td>10 years</td>
+				</tr>
+				<tr>
+					<td>amountSavingPerMonth</td>
+					<td>This parameter shows amount to be saved per month.</td>
+					<td>200$</td>
+				</tr>
+				<tr>
+					<td>yearlyInterestRateOfInvestment</td>
+					<td>This parameter shows yearly interest rate.</td>
+					<td>0.05</td>
+				</tr>
+			</table>
+			</div>
+			
+			<div>
+			<table class = "table table-hover table-bordered">
+			<caption>Invested Amount - After Some Years</caption>
+				<tr>
+					<th>Parameter Name</th>
+					<th>Description</th>
+					<th>Example Value</th>
+				</tr>
+				<tr>
+					<td>yearsInvesting</td>
+					<td>This parameter shows years of investment.</td>
+					<td>5 years</td>
+				</tr>
+				<tr>
+					<td>initialAmount</td>
+					<td>This parameter shows the initial amount of investment.</td>
+					<td>300$</td>
+				</tr>
+				<tr>
+					<td>yearlyInterestRateOfInvestment</td>
+					<td>This parameter is used for Interest Rate of saving</td>
+					<td>0.05</td>
+				</tr>
+			</table>
+			</div>
+			
+			<div>
+			<table class = "table table-hover table-bordered">
+			<caption>Loan Payoff</caption>
+			<tr>
+				<th>Parameter Name</th>
+				<th>Description</th>
+				<th>Example value</th>
+			</tr>
+			<tr>
+				<td>monthlyPaymentAmount</td>
+				<td>This shows monthly payment amount.</td>
+				<td>200$</td>
+			</tr>
+			<tr>
+				<td>initialLoanAmount</td>
+				<td>This shows the initial investment amount.</td>
+				<td>1000$</td>
+			</tr>
+			<tr>
+				<td>yearlyInterestRateOfLoan</td>
+				<td>This shows the yearly rate of interest.</td>
+				<td>0.05</td>
+			</tr>
+			</table>
+			</div>
+        </main>
+		
+		<div>
+			<h2>Jayshree Kanse</h2>
+			<p>I am a master's student at Stevens Institute of Technology. I have four years of IT experience. I love to learn new technologies,
+			which is one of the resons of taking this course. I really like the way this course is structured, Lab's are very helpful for clearning
+			the concepts taught in the lecture.</p>
+			<h3>This is me...!!!!!!</h3>
+			<ul>
+			<li><b>Major - </b>Computer Science</li>
+			<li><b>Favourite song - </b>Numb by Linkin Park</li>
+			<li><b>Hope to learn from CS546 - </b>Javascript, JQuery</li>
+			<li><b>Programming languages I like to use - </b>Java</li>
+			<li><b>Favourite animal - </b>Dog</li>
+			</ul>
+		</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- jQuery fallback -->
+    <script>
+        if (!window.jQuery) { document.write('<script src="/assets/js/jquery.js"><\/script>'); }
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

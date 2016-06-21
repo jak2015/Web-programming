@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <div class="container">
+	        <% include ../partials/header %>
+        <main>
+            <h2><%= pageTitle %></h2>
+						<h2><%= operationTitle %></h2>
+						<hr />
+			            <p>{ Operation Performed : " <%= operationTitle %> " , " Result " : " <%= result %> <% if (operationTitle == "Months to pay off loan") { %>months " }<% } else { %> dollars" }<% } %></p>
+        </main>
+    </div>
+
+    <% include ../partials/scripts %>
+</body>
+
+</html>

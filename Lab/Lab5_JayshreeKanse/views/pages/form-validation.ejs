@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Financial Calculator</h1><br>
+    </header>
+    <main>
+		<br><h4><b>Retirement savings per month</b></h4><br>
+        <form action="/results/perMonthRetirementSavings/" method="POST" class="form form-horizontal" id="basic-calculator-Retire" >
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Years until retirement</label>
+                <div class="col-sm-6">
+                    <input type="text" name="yearsUntilRetirement" class="form-control" id ="yearsUntilRetirement" placeholder="Years until retirement" />
+                </div>
+            </div>
+			<div class="form-group">
+                <label class="col-sm-2 control-label">Amount savings per month</label>
+                <div class="col-sm-6">
+                    <input type="text" name="amountSavingPerMonth" class="form-control" id="amountSavingPerMonth" placeholder="Saving amount per month" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Yearly rate of interest</label>
+                <div class="col-sm-6">
+                    <input type="text" name="roi1" class="form-control" id="roi1" placeholder="Rate of interest" />
+                </div>
+            </div>
+			
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="submit" class="btn btn-default" id="btnretiresaving">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-danger calculator-alerts hidden" id="error-message-retire">
+        </div>
+		
+		<br><h4><b>Invested amount after some months</b></h4><br>
+		<form action="/results/investedAmount/" method="POST" class="form form-horizontal" id="basic-calculator-investedamt">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Years Investing</label>
+                <div class="col-sm-6">
+                    <input type="text" name="yearsInvesting" class="form-control" id ="yearsInvesting" placeholder="Years investing" />
+                </div>
+            </div>
+			<div class="form-group">
+                <label class="col-sm-2 control-label">Initial amount</label>
+                <div class="col-sm-6">
+                    <input type="text" name="initialAmount" class="form-control" id="initialAmount" placeholder="Initial amount" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Yearly rate of interest</label>
+                <div class="col-sm-6">
+                    <input type="text" name="roi2" class="form-control" id="roi2" placeholder="Rate of interest" />
+                </div>
+            </div>
+			
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="submit" class="btn btn-default" id="btninvestedamt">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-danger calculator-alerts hidden" id="error-message-invest">
+        </div>
+		
+		<br><h4><b>Months to pay off loan</b></h4><br>
+		<form action="/results/loanPayoff/" method="POST" class="form form-horizontal" id="basic-calculator-investedamt">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Monthly payment amount</label>
+                <div class="col-sm-6">
+                    <input type="text" name="monthlyPaymentAmount" class="form-control" id ="monthlyPaymentAmount" placeholder="Monthly payment amount" />
+                </div>
+            </div>
+			<div class="form-group">
+                <label class="col-sm-2 control-label">Initial loan amount</label>
+                <div class="col-sm-6">
+                    <input type="text" name="initialLoanAmount" class="form-control" id="initialLoanAmount" placeholder="Initial loan amount" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Yearly rate of interest</label>
+                <div class="col-sm-6">
+                    <input type="text" name="roi3" class="form-control" id="roi3" placeholder="Rate of interest" />
+                </div>
+            </div>
+			
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="submit" class="btn btn-default" id="btnpayoffloan">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-danger calculator-alerts hidden" id="error-message-loan">
+        </div>
+		
+    </main>
+</div>
+
+<% include ../partials/scripts %>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Web Page!</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>CS-546 Assignment 2</h1>
+				<h2>Jayshree Kanse</h2>
+            </div>
+        </div>
+        <main>
+			<h2>My To-Do List</h2><hr />
+			<p><strong>GET /api/todo -</strong> This route will respond with an array listing every ToDoEntry currently stored in memory that has a status of open.<br>
+			<strong>GET /api/todo/completed -</strong> This route will respond with an array listing every ToDoEntry currently stored in memory that has a status of completed.<br>
+			<strong>GET /api/todo/:id -</strong> This route will respond with a single ToDoEntry that is currently stored in memory.<br>
+			If the entry is not found, return the following object with a status code of 404, replacing {ID} with the ID you requested:
+			{"error": "An entry with the ID of {ID} could not be found"}<br>
+			<strong>POST /api/todo -</strong> This route will create and store a new ToDoEntry; if successful, it will respond with the new ToDoEntry in the response.<br>
+			<strong>PUT /api/todo/:id -</strong> This route will update the ToDoEntry with the id of :id and respond with the updated entry.<br>
+			<strong>POST /api/todo/:id/notes -</strong> This route will add a note to the ToDoEntry with an id of :id and respond with the updated entry.<br>
+			<strong>DELETE /api/todo/:id -</strong> This route will remove the ToDoEntry with the id of :id and respond with the following response: {success: true}
+			If the entry is not found, respond with the following object with a status code of 404, replacing {ID} with the ID you requested:
+			{"error": "An entry with the ID of {ID} could not be found"}
+			</p>
+        </main>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- jQuery fallback -->
+    <script>
+        if (!window.jQuery) { document.write('<script src="/assets/js/jquery.js"><\/script>'); }
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

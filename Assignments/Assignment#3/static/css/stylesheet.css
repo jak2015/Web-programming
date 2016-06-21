@@ -1,0 +1,16 @@
+body{
+	background: url("/assets/images/bodyBackground.jpg") no-repeat fixed;
+	-webkit-background-size: cover;
+}
+
+#twoForms{
+	
+	margin-top:20px;
+}
+
+ul li{
+	font-size: 20px;
+	list-style-type: none;
+	padding:5px;
+}
+

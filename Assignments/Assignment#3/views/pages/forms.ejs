@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <div>
+        <header>
+        </header>
+        <main class = "container">
+		<br/>
+		<h3>USER LOGIN AND PROFILE SYSTEM</h3><br>
+			<div id = "twoForms">
+				<h3>LOGIN FORM</h3>
+				<br/>
+				<form class="form form-horizontal" action="/signin" method="POST">
+					<div class="form-group" id = "group1">
+						<label for="number-one" class="col-sm-2">USERNAME:</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" name="Username" id="Username" placeholder="Username">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="number-one" class="col-sm-2">PASSWORD:</label>
+						<div class="col-sm-3">
+							<input type="password" class="form-control" name="Passwrd" id="Passwrd" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-default btn-success" id="login-submit">
+					</div>
+				</form>
+				<div class="alert alert-danger hidden" id="loginErrorMessage"></div>
+			</div>
+			<hr/>
+			<div id = "twoForms">
+				<h3>SIGNUP FORM</h3>
+				<br/>
+				<form class="form form-horizontal" id="loan-repayment" action="/signup" method="POST">
+					<div class="form-group" id = "group1">
+						<label for="number-one" class="col-sm-2">USERNAME:</label>
+						<div class="col-sm-3">
+							<input type="text" class="form-control" name= "uname" id="uname" placeholder="Username">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="number-one" class="col-sm-2">PASSWORD:</label>
+						<div class="col-sm-3">
+							<input type="password" class="form-control" name= "pwd" id="pwd" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="submit" class="btn btn-default btn-success" id="signup-Submit">
+					</div>
+				</form>
+				<div class="alert alert-danger hidden" id="signupErrorMessage"></div>
+			</div>
+            <!-- Let's start writing content! -->        
+        </main>
+    </div>
+
+    <% include ../partials/scripts %>
+</body>
+
+</html>
